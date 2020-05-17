@@ -1,5 +1,5 @@
 # DS - Task 2
-## Data Structures - task 2. Dynamic Stack with console iterations.
+## Data Structures - task 2
 
 ### Динамический стек
 Данная лабораторная работа состоит в выполнении варианта задания из пункта 1 и пункта 2.
