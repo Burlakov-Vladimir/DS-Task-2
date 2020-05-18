@@ -47,17 +47,12 @@ inline void printIncorrectCommandInfo(std::ostream &output, std::string menuComm
       << "Please, press <?> to call the help menu" << std::endl;
 }
 
-inline void printPushBackInfo(std::ostream &output)
-{
-   output << "Enter the value, that you want to push back: " << std::endl;
-}
-
 inline void printCommandDone(std::ostream &output)
 {
    output << "Done!" << std::endl;
 }
 
-inline void printEnterMenu(std::ostream &output)
+inline void printEnterMenuCommand(std::ostream &output)
 {
    output << "Enter the menu command: " << std::endl;
 }
@@ -87,7 +82,7 @@ int main()
       bool correctCommand = true;
       do
       {
-         printEnterMenu(std::cout);
+         printEnterMenuCommand(std::cout);
          std::cin >> menuCommand;
 
          if (menuCommand.size() != 1)
