@@ -111,7 +111,7 @@ void DynamicStack<T>::popBack()
 		printPopError(std::cout);
 	}
 
-	if (size_ < capacity_ / 4)
+	if (size_ < capacity_ / 4) 
 	{
 		reduceCapacity();
 	}
@@ -128,10 +128,14 @@ inline bool DynamicStack<T>::empty() const
 template<typename t>
 inline void DynamicStack<t>::printEmpty(std::ostream &output)
 {
-	if (empty())
+	if (empty()) 
+	{
 		output << "Stack is empty." << std::endl;
+	}
 	else
+	{
 		output << "Stack is not empty." << std::endl;
+	}
 }
 
 template<typename T>
